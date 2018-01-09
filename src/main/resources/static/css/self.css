@@ -1,0 +1,7 @@
+#navbar,#footer-navbar{
+    text-align: center;
+
+}
+#navbar ul{
+     display: inline-block;
+ }
