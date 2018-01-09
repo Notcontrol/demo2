@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  context-path:
+
+spring:
+  mvc:
+    view:
+      suffix: .html
+      prefix: /templates/
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
