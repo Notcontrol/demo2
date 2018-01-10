@@ -50,6 +50,7 @@
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 		<link rel="stylesheet" href="css/timetable.css">
+
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 
@@ -68,7 +69,8 @@
 	-->
 	<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/self.css">
-
+        <link rel="stylesheet" href="css/normaliza.css">
+		<link rel="stylesheet" href="css/footer.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -79,6 +81,29 @@
 
 	</head>
 	<body>
+	<svg class="hidden">
+		<symbol id="icon-arrow" viewBox="0 0 24 24">
+			<title>arrow</title>
+			<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+		</symbol>
+		<symbol id="icon-drop" viewBox="0 0 24 24">
+			<title>drop</title>
+			<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
+		</symbol>
+		<symbol id="icon-github" viewBox="0 0 32.6 31.8">
+			<title>github</title>
+			<path d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4C7.4,10.7,6.8,9,7.7,6.8c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C32.6,7.3,25.3,0,16.3,0z"/>
+		</symbol>
+		<symbol id="icon-keyboard" viewBox="0 0 100 70">
+			<title>keyboard</title>
+			<!-- https://thenounproject.com/term/keyboard/783/ by Paul te Kortschot from the Noun Project -->
+			<path d="M 60.94,1.83 39.22,1.83 C 36.71,1.83 34.67,3.86 34.67,6.376 L 34.67,28.1 C 34.67,30.61 36.71,32.65 39.22,32.65 L 60.94,32.65 C 63.45,32.65 65.5,30.61 65.5,28.1 L 65.5,6.376 C 65.5,3.86 63.45,1.83 60.94,1.83 Z M 44.79,18.63 50.08,11.74 55.37,18.63 Z" opacity="0.2"/>
+			<path d="M 60.86,36.75 39.14,36.75 C 36.63,36.75 34.59,38.79 34.59,41.3 L 34.59,63.02 C 34.59,65.53 36.63,67.57 39.14,67.57 L 60.86,67.57 C 63.38,67.57 65.41,65.53 65.41,63.02 L 65.41,41.3 C 65.42,38.79 63.38,36.75 60.86,36.75 Z M 50.08,57.45 44.79,50.55 55.37,50.55 Z" opacity="0.2" />
+			<path d="M 95.45,36.75 73.73,36.75 C 71.22,36.75 69.18,38.79 69.18,41.3 L 69.18,63.02 C 69.18,65.53 71.22,67.57 73.73,67.57 L 95.45,67.57 C 97.97,67.57 100,65.53 100,63.02 L 100,41.3 C 100,38.79 97.97,36.75 95.45,36.75 Z M 83.4,57.45 83.4,46.86 90.3,52.16 Z" />
+			<path d="M 26.27,36.75 4.55,36.75 C 2.037,36.75 0,38.79 0,41.3 L 0,63.02 C 0,65.53 2.037,67.57 4.55,67.57 L 26.27,67.57 C 28.78,67.57 30.82,65.53 30.82,63.02 L 30.82,41.3 C 30.82,38.79 28.78,36.75 26.27,36.75 Z M 16.69,57.45 9.79,52.16 16.69,46.86 Z" />
+		</symbol>
+	</svg>
+
 	<header role="banner" id="fh5co-header">
 			<div class="row">
 				<!-- <div class="row"> -->
@@ -139,16 +164,16 @@
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
 					<h2 class="to-animate">Events of This Week</h2>
-					<div class="row">
+					<div class="row" style="margin-top: 80px">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
 							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row row-bottom-padded-sm" id="weekly-view">
+			<div class="row row-bottom-padded-sm" style="margin-top: 50px;" id="weekly-view">
 				<div class="timetable-example">
-					<div class="tiva-timetable" data-source="json" data-view="week"></div>
+					<div class="tiva-timetable" style="min-height: 500px;" data-source="json" data-view="week"></div>
 				</div>
 			</div>
 
@@ -156,277 +181,54 @@
 	</section>
 
 	<section id="fh5co-testimonials" data-section="testimonials">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">Testimonials</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="box-testimony">
-						<blockquote class="to-animate-2">
-							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-						</blockquote>
-						<div class="author to-animate">
-							<figure><img src="images/person1.jpg" alt="Person"></figure>
-							<p>
-							Jean Doe, CEO <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="box-testimony">
-						<blockquote class="to-animate-2">
-							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
-						</blockquote>
-						<div class="author to-animate">
-							<figure><img src="images/person2.jpg" alt="Person"></figure>
-							<p>
-							John Doe, Senior UI <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>
-							</p>
-						</div>
-					</div>
-				</div>
 
-				<div class="col-md-4">
-					<div class="box-testimony">
-						<blockquote class="to-animate-2">
-							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. &rdquo;</p>
-						</blockquote>
-						<div class="author to-animate">
-							<figure><img src="images/person3.jpg" alt="Person"></figure>
-							<p>
-							Chris Nash, Director <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>
-							</p>
-						</div>
-					</div>
-				</div>
-
-
-			</div>
-		</div>
 	</section>
 
 
 	<section id="fh5co-services" data-section="services">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-left">
-					<h2 class=" left-border to-animate">Services</h2>
-					<div class="row">
-						<div class="col-md-8 subtext to-animate">
-							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
-					<i class="icon to-animate-2 icon-anchor"></i>
-					<h3>Brand &amp; Strategy</h3>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-				</div>
-				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
-					<i class="icon to-animate-2 icon-layers2"></i>
-					<h3>Web &amp; Interface</h3>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-				</div>
 
-				<div class="clearfix visible-sm-block"></div>
-
-				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
-					<i class="icon to-animate-2 icon-video2"></i>
-					<h3>Photo &amp; Video</h3>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-				</div>
-				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
-					<i class="icon to-animate-2 icon-monitor"></i>
-					<h3>CMS &amp; eCommerce</h3>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-				</div>
-
-			</div>
-		</div>
 	</section>
 
 	<section id="fh5co-about" data-section="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">About</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-person text-center to-animate">
-						<figure><img src="images/person1.jpg" alt="Image"></figure>
-						<h3>Jean Smith</h3>
-						<span class="fh5co-position">Web Designer</span>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-						<ul class="social social-circle">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-person text-center to-animate">
-						<figure><img src="images/person2.jpg" alt="Image"></figure>
-						<h3>Rob Smith</h3>
-						<span class="fh5co-position">Web Developer</span>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-						<ul class="social social-circle">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-person text-center to-animate">
-						<figure><img src="images/person3.jpg" alt="Image"></figure>
-						<h3>Larry Ben</h3>
-						<span class="fh5co-position">Web Designer</span>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
-						<ul class="social social-circle">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+
 	</section>
 
-	<section id="fh5co-counters" style="background-image: url(images/full_image_1.jpg);" data-stellar-background-ratio="0.5">
-		<div class="fh5co-overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center to-animate">
-					<h2>Fun Facts</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="fh5co-counter to-animate">
-						<i class="fh5co-counter-icon icon-briefcase to-animate-2"></i>
-						<span class="fh5co-counter-number js-counter" data-from="0" data-to="89" data-speed="5000" data-refresh-interval="50">89</span>
-						<span class="fh5co-counter-label">Finished projects</span>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="fh5co-counter to-animate">
-						<i class="fh5co-counter-icon icon-code to-animate-2"></i>
-						<span class="fh5co-counter-number js-counter" data-from="0" data-to="2343409" data-speed="5000" data-refresh-interval="50">2343409</span>
-						<span class="fh5co-counter-label">Line of codes</span>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="fh5co-counter to-animate">
-						<i class="fh5co-counter-icon icon-cup to-animate-2"></i>
-						<span class="fh5co-counter-number js-counter" data-from="0" data-to="1302" data-speed="5000" data-refresh-interval="50">1302</span>
-						<span class="fh5co-counter-label">Cup of coffees</span>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="fh5co-counter to-animate">
-						<i class="fh5co-counter-icon icon-people to-animate-2"></i>
-						<span class="fh5co-counter-number js-counter" data-from="0" data-to="52" data-speed="5000" data-refresh-interval="50">52</span>
-						<span class="fh5co-counter-label">Happy clients</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
+	
 	<section id="fh5co-contact" data-section="contact">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">Get In Touch</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row row-bottom-padded-md">
-				<div class="col-md-6 to-animate">
-					<h3>Contact Info</h3>
-					<ul class="fh5co-contact-info">
-						<li class="fh5co-contact-address ">
-							<i class="icon-home"></i>
-							5555 Love Paradise 56 New Clity 5655, <br>Excel Tower United Kingdom
-						</li>
-						<li><i class="icon-phone"></i> (123) 465-6789</li>
-						<li><i class="icon-envelope"></i>info@freehtml5.co</li>
-						<li><i class="icon-globe"></i> <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></li>
-					</ul>
-				</div>
 
-				<div class="col-md-6 to-animate">
-					<h3>Contact Form</h3>
-					<div class="form-group ">
-						<label for="name" class="sr-only">Name</label>
-						<input id="name" class="form-control" placeholder="Name" type="text">
-					</div>
-					<div class="form-group ">
-						<label for="email" class="sr-only">Email</label>
-						<input id="email" class="form-control" placeholder="Email" type="email">
-					</div>
-					<div class="form-group ">
-						<label for="phone" class="sr-only">Phone</label>
-						<input id="phone" class="form-control" placeholder="Phone" type="text">
-					</div>
-					<div class="form-group ">
-						<label for="message" class="sr-only">Message</label>
-						<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-					</div>
-					<div class="form-group ">
-						<input class="btn btn-primary btn-lg" value="Send Message" type="submit">
-					</div>
-					</div>
-				</div>
-
-			</div>
 		</div>
 	</section>
-	
+
+
+    <section id="fh5co-intro">
+        <div class="container">
+            <div class="row watch-video text-center to-animate">
+                <span>Watch the video</span>
+
+                <a href="video/jp_final.mp4" class="popup-vimeo btn-video"><i class="icon-play2"></i></a>
+            </div>
+            <div class="row" style="width: 100%;margin-top: 100px">
+                <div class="col-md-4">
+                    <img src="images/xianweijing.jpg"  alt="microscope" style="width: 330px;height: 400px;">
+                </div>
+                <div class="col-md-8">
+                    <div class="intro section-heading" style="padding-top: 6em;">
+                        <h2 class="text-center">Henu</h2>
+                        <div class="subtext to-animate" style="width: 100%;">
+                            <h3 style="text-indent: 2em">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts
+                                Far far away
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 	
 	<footer id="footer" role="contentinfo">
-		<a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
-		<div class="container">
-			<div class="">
-				<div class="col-md-12 text-center">
-					<p>&copy; Elate Free HTML5. All Rights Reserved. <br>Created by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Images: <a href="http://pexels.com/" target="_blank">Pexels</a>, <a href="http://plmd.me/" target="_blank">plmd.me</a></p>
-					
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<ul class="social social-circle">
-						<li><a href="#"><i class="icon-twitter"></i></a></li>
-						<li><a href="#"><i class="icon-facebook"></i></a></li>
-						<li><a href="#"><i class="icon-youtube"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+
 	</footer>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
@@ -445,7 +247,6 @@
 
 	<script src="js/jquery.magnific-popup.js"></script>
 	<script src="js/timetable.js"></script>
-
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
 	<script type='text/javascript'>
