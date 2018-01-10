@@ -5,3 +5,9 @@
 #navbar ul{
      display: inline-block;
  }
+#grid .section-heading h2{
+    color: #000;
+}
+#grid .section-heading .subtext h3{
+    color: #000;
+}

@@ -554,7 +554,8 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-intro {
   position: relative;
   bottom: 0;
-  margin-top: 50px;
+  margin-top: 30px;
+  background: #f7ecd3;
   z-index: 10;
   padding-bottom: 7em;
 }
@@ -660,6 +661,7 @@ h1, h2, h3, h4, h5, h6 {
 .watch-video {
   text-align: center;
   width: 100%;
+  margin-top:30px;
   display: block;
   float: left;
 }
