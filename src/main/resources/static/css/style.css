@@ -231,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   }
   #fh5co-header .navbar-brand {
-    color: #b1040e !important;
+    color: #52d3aa !important;
   }
   #fh5co-header #navbar li a {
     color: rgba(0, 0, 0, 0.5) !important;
@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
   }
   #fh5co-header #navbar li a:hover {
-    color: #b1040e !important;
+    color: #52d3aa !important;
   }
   #fh5co-header #navbar li a span:before {
     background: transparent !important;
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
   #fh5co-header #navbar li.active a {
     background: transparent;
     background: none;
-    color: #b1040e !important;
+    color: #52d3aa !important;
   }
   #fh5co-header #navbar li.active a span:before {
     visibility: visible;
@@ -279,7 +279,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #b1040e;
+  background-color: #52d3aa;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -332,7 +332,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
 }
 #fh5co-header.navbar-fixed-top .navbar-brand {
-  color: #b1040e;
+  color: #52d3aa;
 }
 #fh5co-header.navbar-fixed-top #navbar li a {
   color: rgba(0, 0, 0, 0.5);
@@ -345,12 +345,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-header.navbar-fixed-top #navbar li a:hover {
-  color: #b1040e;
+  color: #52d3aa;
 }
 #fh5co-header.navbar-fixed-top #navbar li.active a {
   background: transparent;
   background: none;
-  color: #b1040e;
+  color: #52d3aa;
 }
 #fh5co-header.navbar-fixed-top #navbar li.active a span:before {
   visibility: visible;
@@ -638,7 +638,7 @@ h1, h2, h3, h4, h5, h6 {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #b1040e;
+  border-color: #52d3aa;
 }
 
 .btn {
@@ -728,7 +728,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-intro .fh5co-block > .fh5co-text .fh5co-intro-icon {
   font-size: 50px;
-  color: #b1040e;
+  color: #52d3aa;
   margin-bottom: 30px;
   display: block;
 }
@@ -852,7 +852,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 80px;
   height: 2px;
-  background: #b1040e;
+  background: #52d3aa;
   left: 0%;
   margin-left: 0px;
   bottom: 0;
@@ -863,7 +863,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 80px;
   height: 2px;
-  background: #b1040e;
+  background: #52d3aa;
   left: 50%;
   margin-left: -40px;
   bottom: 0;
