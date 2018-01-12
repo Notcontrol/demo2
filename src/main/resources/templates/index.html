@@ -53,7 +53,8 @@
 
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-
+        <link rel="stylesheet" href="css/flickity.css">
+        <link rel="stylesheet" href="css/fakeloader.css">
 	<!-- 
 	Default Theme Style 
 	You can change the style.css (default color purple) to one of these styles
@@ -80,6 +81,7 @@
 
 	</head>
 	<body>
+    <div class="fakeloader"></div>
     <svg class="hidden">
         <symbol id="icon-arrow" viewBox="0 0 24 24">
             <title>arrow</title>
@@ -147,19 +149,20 @@
 			<div class="text-inner">
 
 				<div id="bodyPage">
-					<img src="images/kv02.jpg" class="bg">
-					<img src="images/kv03.jpg" class="bg">
-					<img src="images/kv04.jpg" class="bg">
-					<img src="images/kv05.jpg" class="bg">
+					<img src="images/banner/1.jpg" class="bg">
+					<img src="images/banner/3.jpg" class="bg">
+					<img src="images/banner/4.jpg" class="bg">
+					<img src="images/banner/5.jpg" class="bg">
+                    <img src="images/banner/6.jpg" class="bg">
 				</div>
-				<div style="z-index: 999;position: absolute;top: 18%;width: 100%;text-align: center"><img style="display: inline-block" src="images/logo2.png"/></div>
+				<div style="z-index: 999;position: absolute;top: 18%;width: 100%;text-align: center"><img style="display: inline-block" src="images/logo.png"/></div>
 			</div>
 		</div>
 	</section>
 
 
 
-	<section id="fh5co-work" data-section="work">
+	<section id="fh5co-work"  data-section="work">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
@@ -173,7 +176,7 @@
 			</div>
 			<div class="row row-bottom-padded-sm" style="margin-top: 50px;" id="weekly-view">
 				<div class="timetable-example">
-					<div class="tiva-timetable" style="min-height: 500px;" data-source="json" data-view="week"></div>
+					<div class="tiva-timetable" style="min-height: 500px;background: #fff" data-source="json"></div>
 				</div>
 			</div>
 
@@ -193,7 +196,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3" style="margin-top: 50px">
                     <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
                         <figure>
                             <img src="img/2.png" />
@@ -219,7 +222,7 @@
                         </figure>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" style="margin-top: 50px">
                     <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
                         <figure>
                             <img src="img/6.png" />
@@ -247,7 +250,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3" style="margin-top: 50px">
                     <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
                         <figure>
                             <img src="img/1.png" />
@@ -260,7 +263,7 @@
                         </figure>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" >
                     <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
                         <figure>
                             <img src="img/3.png" />
@@ -273,7 +276,7 @@
                         </figure>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" style="margin-top: 50px">
                     <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
                         <figure>
                             <img src="img/5.png" />
@@ -286,7 +289,7 @@
                         </figure>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" >
                     <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
                         <figure>
                             <img src="img/7.png" />
@@ -304,17 +307,206 @@
     </section>
 
 
-	<section id="fh5co-about" data-section="about">
 
-	</section>
+    <section id="fh5co-about" data-section="about" style="margin-bottom: 100px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-heading text-center">
+                    <h2 class="to-animate">Events of This Week</h2>
+                    <div class="row" style="margin-top: 80px">
+                        <div class="col-md-8 col-md-offset-2 subtext to-animate">
+                            <h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="intro section-heading" style="padding-top: 2em;">
+                        <h2 class="text-center">Cotton</h2>
+                        <div class="subtext to-animate" style="width: 100%;">
+                            <h3 style="text-indent: 2em">Far far away, behind the word mountains, far from
+                                Far far away, behind the word mountains, far from
+                                Far far away, behind
+                            </h3>
 
-	
-	<section id="fh5co-contact" data-section="contact">
-		<div class="container">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <img src="images/banner/4.jpg" alt="" style="width: 627px;height: 350px;">
+                </div>
+            </div>
+        </div>
 
-		</div>
-	</section>
+        <div class="main-carousel" style="margin-top: 100px">
+            <div class="carousel-cell">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <img src="images/banner/1.jpg" alt="" style="width: 627px;height: 350px;">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="intro section-heading" style="padding-top: 2em;">
+                                <h2 class="text-center">Henu</h2>
+                                <div class="subtext to-animate" style="width: 100%;">
+                                    <h3 style="text-indent: 2em">Far far away, behind the word mountains, far from
+                                    </h3>
+                                    <p class="text-center"><a class="btn btn-info btn-outline with-arrow" href="#">Learn more <i class="icon-arrow-right"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <img src="images/banner/1.jpg" alt="" style="width: 627px;height: 350px;">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="intro section-heading" style="padding-top: 2em;">
+                                <h2 class="text-center">Henu</h2>
+                                <div class="subtext to-animate" style="width: 100%;">
+                                    <h3 style="text-indent: 2em">Far far away, behind the word mountains, far fr
+                                    </h3>
+                                    <p class="text-center"><a class="btn btn-info btn-outline with-arrow" href="#">Learn more <i class="icon-arrow-right"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <img src="images/banner/1.jpg" alt="" style="width: 627px;height: 350px;">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="intro section-heading" style="padding-top: 2em;">
+                                <h2 class="text-center">Henu</h2>
+                                <div class="subtext to-animate" style="width: 100%;">
+                                    <h3 style="text-indent: 2em">Far far away, behind the word mountains, far from the count
+                                    </h3>
+                                    <p class="text-center"><a class="btn btn-info btn-outline with-arrow" href="#">Learn more <i class="icon-arrow-right"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+
+    <section id="fh5co-contact" data-section="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-heading text-center">
+                    <h2 class="to-animate">Scientific Research</h2>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 subtext to-animate">
+                            <h3>Aiming at the development frontier of international agricultural science and technology, combined with the needs of the state and the characteristics of Huang Huai Hai region, the laboratory has carried out the major basic theory and technology development research related to dry land agricultural production practice.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center item-block">
+                    <span class="icon"><i class="icon-heart"></i></span>
+                    <h3>承担项目</h3>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                    <p><a class="btn btn-info btn-outline with-arrow" href="#">Learn more <i class="icon-arrow-right"></i></a></p>
+                </div>
+                <div class="col-md-4 text-center item-block">
+                    <span class="icon"><i class="icon-cloud"></i></span>
+                    <h3>研究成果</h3>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                    <p><a class="btn btn-info btn-outline with-arrow" href="#">Learn more <i class="icon-arrow-right"></i></a></p>
+                </div>
+                <div class="col-md-4 text-center item-block">
+                    <span class="icon"><i class="icon-globe"></i></span>
+                    <h3>研究方向</h3>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                    <p><a class="btn btn-info btn-outline with-arrow" href="#">Learn more <i class="icon-arrow-right"></i></a></p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section data-stellar-background-ratio="0.5" id="fh5co-counters" style="background-image: url(images/full_image_1.jpg);">
+        <div class="fh5co-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-heading text-center to-animate">
+                    <h2>Laboratory survey</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="fh5co-counter to-animate">
+                        <i class="fh5co-counter-icon icon-briefcase to-animate-2"></i>
+                        <span class="fh5co-counter-number js-counter" data-from="0" data-refresh-interval="50" data-speed="5000" data-to="89">89</span>
+                        <span class="fh5co-counter-label">Research Group</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="fh5co-counter to-animate">
+                        <i class="fh5co-counter-icon icon-file to-animate-2"></i>
+                        <span class="fh5co-counter-number js-counter" data-from="0" data-refresh-interval="50" data-speed="5000" data-to="24546">2343409</span>
+                        <span class="fh5co-counter-label">paper</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="fh5co-counter to-animate">
+                        <i class="fh5co-counter-icon icon-star to-animate-2"></i>
+                        <span class="fh5co-counter-number js-counter" data-from="0" data-refresh-interval="50" data-speed="5000" data-to="56">1302</span>
+                        <span class="fh5co-counter-label">prize</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="fh5co-counter to-animate">
+                        <i class="fh5co-counter-icon icon-people to-animate-2"></i>
+                        <span class="fh5co-counter-number js-counter" data-from="0" data-refresh-interval="50" data-speed="5000" data-to="52">52</span>
+                        <span class="fh5co-counter-label">Researcher</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section data-section="about" id="fh5co-testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-heading text-center">
+                    <h2 class="to-animate">Events of This Week</h2>
+                    <div class="row" style="margin-top: 80px">
+                        <div class="col-md-8 col-md-offset-2 subtext to-animate">
+                            <h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel  " data-flickity style="margin-top: 100px">
+            <div class="carousel-cell2">
+                <img src="images/banner/1.jpg" alt="" style="width: 627px;height: 350px;">
+            </div>
+            <div class="carousel-cell2">
+                <img src="images/banner/3.jpg" alt="" style="width: 627px;height: 350px;">
+            </div>
+            <div class="carousel-cell2">
+                <img src="images/banner/5.jpg" alt="" style="width: 627px;height: 350px;">
+            </div>
+        </div>
+    </section>
 
     <section id="fh5co-intro">
         <div class="container">
@@ -324,12 +516,12 @@
 
                 <a href="video/jp_final.mp4" class="popup-vimeo btn-video"><i class="icon-play2"></i></a>
             </div>
-            <div class="row" style="width: 100%;margin-top: 100px">
-                <div class="col-md-4">
-                    <img src="images/xianweijing.jpg"  alt="microscope" style="width: 330px;height: 400px;">
-                </div>
-                <div class="col-md-8">
-                    <div class="intro section-heading" style="padding-top: 6em;">
+            <div class="row" style="width: 100%;">
+                <!--<div class="col-md-4">-->
+                    <!--<img src="images/henu3.png"  alt="microscope" style="width: 350px;height: 350px;">-->
+                <!--</div>-->
+                <div class="col-md-12">
+                    <div class="intro section-heading" style="padding-top: 2em;">
                         <h2 class="text-center">Henu</h2>
                         <div class="subtext to-animate" style="width: 100%;">
                             <h3 style="text-indent: 2em">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
@@ -342,12 +534,82 @@
             </div>
         </div>
     </section>
-	
-	<footer id="footer" role="contentinfo">
 
+
+
+
+	
+	<footer id="footer" style="background: url('images/banner/footer.jpg');-webkit-background-size: cover;background-size: cover;: " role="contentinfo">
+        <div class="container">
+
+            <div class="row" id="footer-ul">
+                <div class="col-md-5 text-center" >
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6">
+                            <h1 style="margin-top: 1.6em"><span style="color: #b9ff7d;">Henu</span>·<span style="color: #44fff5;">Lab</span></h1>
+                        </div>
+                        <div class="col-md-6 col-xs-6">
+                            <h4><i class="icon-link"></i> Friendship link</h4>
+                            <ul class="footer-ul">
+                                <li><a href="#">henu</a></li>
+                                <li><a href="#">stanford</a></li>
+                                <li><a href="#">peru</a></li>
+                                <li><a href="#">pku</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                </div>
+                <div class="col-md-5 text-center">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6">
+                            <h4><i class="icon-link"></i> Friendship link</h4>
+                            <ul class="footer-ul">
+                                <li><a href="#">henu</a></li>
+                                <li><a href="#">stanford</a></li>
+                                <li><a href="#">peru</a></li>
+                                <li><a href="#">pku</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-xs-6">
+                            <h4><i class="icon-link"></i> Friendship link</h4>
+                            <ul class="footer-ul">
+                                <li><a href="#">henu</a></li>
+                                <li><a href="#">stanford</a></li>
+                                <li><a href="#">peru</a></li>
+                                <li><a href="#">pku</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="background-color: #003c6a;border: none;height: 1px;">
+        <div >
+            <div class="container" >
+                <div class="row">
+                    <div class="col-md-12 text-center footer-p" >
+                        <p>Copyright@2017 | State Key Laboratory of Cotton Biology & Key Laboratory of Plant Stress Biology | All Rights reserved</p>
+                        <p>Address: China - Henan - Kaifeng contact phone: 0371 - 23881387 Fax: 0371 - 23881387</p>
+                        <p>Technical support: the website studio of the school of software, Henan University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</footer>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
+    <script src="js/fakeloader.min.js"></script>
+    <script>
+        $(function () {
+            $(".fakeloader").fakeLoader({
+                timeToHide: 1200,
+                bgColor: "#97adb6",
+                spinner: "spinner7"
+            });
+        })
+    </script>
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
@@ -360,44 +622,56 @@
 	<script src="js/jquery.countTo.js"></script>
 	<script src="js/fullplay.js"></script>
 	<!-- End demo purposes only -->
-
+    <script src="js/anime.min.js"></script>
 	<script src="js/jquery.magnific-popup.js"></script>
 	<script src="js/timetable.js"></script>
 	<!-- Main JS (Do not remove) -->
-	<script src="js/main.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
     <script src="js/snap.svg-min.js"></script>
+
+    <script src="js/main.js"></script>
 	<script type='text/javascript'>
-        $(document).ready(function(){
+        $(document).ready(function() {
 
             $("#bodyPage").fullImages({
                 ImgWidth: 1900,
                 ImgHeight: 980,
-                autoplay :  3000,
-                fadeTime : 2000
+                autoplay: 3000,
+                fadeTime: 2000
             });
 
             function init() {
                 var speed = 330,
                     easing = mina.backout;
 
-                [].slice.call ( document.querySelectorAll( '#grid > div > div > a' ) ).forEach( function( el ) {
-                    var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+                [].slice.call(document.querySelectorAll('#grid > div > div > a')).forEach(function (el) {
+                    var s = Snap(el.querySelector('svg')), path = s.select('path'),
                         pathConfig = {
-                            from : path.attr( 'd' ),
-                            to : el.getAttribute( 'data-path-hover' )
+                            from: path.attr('d'),
+                            to: el.getAttribute('data-path-hover')
                         };
 
-                    el.addEventListener( 'mouseenter', function() {
-                        path.animate( { 'path' : pathConfig.to }, speed, easing );
-                    } );
+                    el.addEventListener('mouseenter', function () {
+                        path.animate({'path': pathConfig.to}, speed, easing);
+                    });
 
-                    el.addEventListener( 'mouseleave', function() {
-                        path.animate( { 'path' : pathConfig.from }, speed, easing );
-                    } );
-                } );
+                    el.addEventListener('mouseleave', function () {
+                        path.animate({'path': pathConfig.from}, speed, easing);
+                    });
+                });
             }
 
             init();
+            $('.main-carousel').flickity({
+                // options
+                cellAlign: 'left',
+                contain: true
+            });
+            $('.second-carousel').flickity({
+                // options
+                cellAlign: 'left',
+                contain: true
+            });
         });
 	</script>
 	</body>
