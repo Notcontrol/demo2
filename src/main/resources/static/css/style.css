@@ -541,10 +541,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../images/banner/2.jpg") no-repeat;
   background-size:cover;
 }
-#fh5co-work a {
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: underline;
-}
+
 #fh5co-work a:hover {
   color: white;
 }
@@ -653,7 +650,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-intro {
   position: relative;
   bottom: 0;
-  background: url("../images/banner/8.jpg") no-repeat;
+  background: url("../images/banner/8.png") no-repeat;
   -webkit-background-size:cover;
   background-size:cover;
   z-index: 10;
